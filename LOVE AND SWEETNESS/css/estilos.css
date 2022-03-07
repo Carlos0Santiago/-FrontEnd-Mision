@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #F5F5F5;
+}
+
+
+h1{
+    text-align: center;
+}
+
+table{
+    margin-top: 50px;
+    caption-side: bottom;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: black;
+    color: white;
+}
+
+caption{
+    padding-top: 20px;
+    font-style: italic;
+}
+
+td,th{
+    border: 2px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+header{
+    height: 100px;
+}
+
+.container__header{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 40px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__login{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 340px;
+    padding-top: 340px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.logo img{
+    width: 80px;
+}
+
+.menu nav ul{
+    display: flex;
+}
+
+.menu nav ul li{
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.menu nav ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    transition: opacity 300ms;
+}
+
+.menu nav ul li a:hover{
+    opacity: 0.6;
+}
+
+.btn__header-session,
+.btn__header-client,
+.btn__header-adm
+{
+    padding: 14px 50px;
+    border: none;
+    background: #000;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background, color, 300ms;
+}
+.btn__header-pedido{
+    padding: 14px 50px;
+    border: none;
+    background: #000;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background, color, 00ms;
+}
+
+
+.btn__header-session:hover,
+.btn__header-client:hover,
+.btn__header-adm:hover,
+.btn__header-pepido{
+    background: #69F1A1;
+    color: #000;
+}
+
+
+#icon_menu{
+    display: none;
+}
+
+/*PORTADA - COVER*/
+
+main{
+    max-width: 1200px;
+    height: calc(100vh + 800px);
+    padding: 40px;
+    margin: auto;
+}
+
+.cover{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+
+
+
