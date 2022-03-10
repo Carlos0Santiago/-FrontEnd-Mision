@@ -23,11 +23,11 @@
             <div class="menu">
                 <nav>
                     <ul>
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="#">Carrito</a></li>
-                        <li><a href="#">Pedidos</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Mi perfil</a></li>
+                        <li><a href="C:\Users\DC\Documents\LOVE AND SWEETNESS\client\Productos.html">Productos</a></li>
+                        <li><a href="C:\Users\DC\Documents\LOVE AND SWEETNESS\client\carrito.html">Pide aqui</a></li>
+                        <li><a href="C:\Users\DC\Documents\LOVE AND SWEETNESS\client\pedidos.html">Pedidos</a></li>
+                        <li><a href="C:\Users\DC\Documents\LOVE AND SWEETNESS\contacto.html">Contacto</a></li>
+                        <li><a href="C:\Users\DC\Documents\LOVE AND SWEETNESS\perfil2.html">Mi perfil</a></li>
                     </ul>
                 </nav>
            
@@ -36,52 +36,61 @@
     </header>
 
     <main>
+        <div class="contact_form">
 
-
-        <table>
-      
-               
-                <tr>
-                    <th>#</th>
-                    <th>Pastel</th>
-                    <th>cantidad</th>
-                    <th>Precio</th>
-
-        
-                
-        
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Fresa</td>
-                    <td>2</td>
-                    <td>$250</td>
-        
-        
-                </tr>
-                <tr>
-                   <td>2</td>
-                   <td>Chocolate</td>
-                   <td>2</td>
-                   <td>$250</td>
-        
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Durazno</td>
-                    <td>2</td>
-                    <td>$250</td>
-        
-                </tr>
-            </table>
-        </div>
-        <i class="fa-solid fa-bars" id="icon_menu"></i>
-        <div class="header__pedido">
-            <form action="C:\Users\DC\Documents\LOVE AND SWEETNESS\client\pedidos.html">
-            <input type="submit" class="btn__header-pedido" value="Realizar Pedido">
-
+            <div class="formulario">
+                  <h1>Pedido</h1>
+            <h3><center>Deja tu pedido en este formulario</center></h3>
+            
+            
+            <form action="submeter-formulario.php" method="post">
+            
+            
+            <p>
+            <label for="nombre" class="colocar_nombre">Nombre
+            <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+            </p>
+            
+            <p>
+            <label for="email" class="colocar_email">Email
+            <span class="obligatorio">*</span>
+            </label>
+            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+            </p>
+            
+            <p>
+            <label for="telefone" class="colocar_telefono">Teléfono
+            </label>
+            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+            </p>
+            
+            <p>
+            <label for="website" class="colocar_website">Cantidad Pasteles
+            </label>
+            <input type="url" name="introducir_website" id="website" placeholder="¿Cuántos pasteles deseas?">
+            </p>
+            
             </form>
-    </div>
+
+    
+            <div class="col-md-6">
+                <ul class="list-group">
+                 <h1>¿Qué sabores deseas?</h1>
+                    <li class="list-group-item">Chocolate <input type="checkbox" ></li>
+                    <li class="list-group-item">Durazno<input type="checkbox" ></li>
+                    <li class="list-group-item">Fresa<input type="checkbox" ></li>
+                  </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group">
+                 <h1>¿Qué accesorios deseas?</h1>
+                    <li class="list-group-item">Velas <input type="checkbox" ></li>
+                    <li class="list-group-item">bengalas<input type="checkbox" ></li>
+                    <button type="button" class="btn btn-outline-success">Enviar</button>
+                  </ul>
+            </div>
     </main>
 </body>
 </html>
